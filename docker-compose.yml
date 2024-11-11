@@ -3,6 +3,8 @@ services:
     build: .
     ports:
       - "100:8080"
+    depends_on:
+      - db
   db:
     image: postgres:latest
     restart: always

@@ -1,6 +1,6 @@
-package ru.chousik.lab3web.sevices;
+package ru.chousik.lab3web.serviceBeans;
 
 public interface ServiceInterface<T> {
     boolean valid(T t);
-    void check(T t);
+    boolean check(T t);
 }

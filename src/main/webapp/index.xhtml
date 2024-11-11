@@ -1,11 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
-<f:view>
-    <h:outputLabel value="Hello, world"/>
-</f:view>
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Лабораторная работа №1</title>
+        <link rel="stylesheet" href="styles/index.css"/>
+    </h:head>
+    <h:body>
+        <div class="main_index">
+            <div class="head">
+                <header class="element">
+                    <h1>Silaev Zahar P3210 409555 V-44443</h1>
+                </header>
+            </div>
+            <div class="others">
+                <div class="canvas">
+                    <canvas id="clock" width="800" height="800"/>
+                </div>
+                <div class="button_container">
+                    <h:button value="Главная" styleClass="button" action="go-to-main" id="go-to-dots"/>
+                </div>
+            </div>
+        </div>
+    </h:body>
+    <script src="scripts/clock-script.js"></script>
 </html>

@@ -9,8 +9,9 @@ import lombok.*;
 @Setter
 @Entity
 @Table(name = "points")
-@NoArgsConstructor
 public final class Point {
+    private static final long serialVersionUID = -5170875020617735653L;
+
     @Id
     @Column(name="id", nullable=false, unique=true)
     private int id;

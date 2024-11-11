@@ -1,32 +1,33 @@
 plugins {
-    id 'java'
-    id 'war'
+    id "java"
+    id "war"
 }
 
-group 'ru.chousik'
-version '1.0-SNAPSHOT'
+group "ru.chousik"
+version "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
 }
 
 ext {
-    junitVersion = '5.10.0'
+    junitVersion = "5.10.0"
 }
 
 tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
+    options.encoding = "UTF-8"
 }
 
 dependencies {
-    annotationProcessor ('org.projectlombok:lombok:1.18.24')
-    compileOnly ('org.projectlombok:lombok:1.18.24')
-    compileOnly('jakarta.ejb:jakarta.ejb-api:4.0.1')
-    compileOnly('jakarta.faces:jakarta.faces-api:4.0.1')
-    compileOnly('jakarta.servlet:jakarta.servlet-api:6.0.0')
-    compileOnly('jakarta.xml.ws:jakarta.xml.ws-api:4.0.0')
-    implementation('org.hibernate:hibernate-core:6.3.1.Final')
-    implementation('org.glassfish.jaxb:jaxb-runtime:4.0.3')
-    implementation('org.hibernate.validator:hibernate-validator:8.0.1.Final')
+    annotationProcessor ("org.projectlombok:lombok:1.18.32")
+    compileOnly ("org.projectlombok:lombok:1.18.32")
+    compileOnly("jakarta.ejb:jakarta.ejb-api:4.0.1")
+    implementation("org.postgresql:postgresql:42.7.3")
+    compileOnly("jakarta.faces:jakarta.faces-api:4.1.0")
+    compileOnly("jakarta.servlet:jakarta.servlet-api:6.1.0")
+    compileOnly("jakarta.xml.ws:jakarta.xml.ws-api:4.0.2")
+    implementation("org.hibernate:hibernate-core:6.5.2.Final")
+    implementation("org.glassfish.jaxb:jaxb-runtime:4.0.5")
+    implementation("org.hibernate.validator:hibernate-validator:8.0.1.Final")
 
 }
